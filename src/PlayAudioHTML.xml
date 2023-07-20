@@ -13,7 +13,7 @@
                     <caption>FileID of FileDocument</caption>
                     <description/>
                     <attributeTypes>
-                        <attributeType name="AutoNumber"/>
+                        <attributeType name="String"/>
                     </attributeTypes>
                 </property>
             </propertyGroup>

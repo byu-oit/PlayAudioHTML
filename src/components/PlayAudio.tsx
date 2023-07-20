@@ -20,7 +20,7 @@ export class PlayAudio extends Component<PlayAudioProps> {
         const fileUrl = window.location.protocol + "//" +
             window.location.hostname + ":" +
             window.location.port + "/" +
-            "file?fileID=" + this.props.fileId;
+            "file?guid=" + this.props.fileId;
         return <div className="widget-play-audio">
             <audio className="audio-player" controls src={fileUrl}>Your browser does not support the <code>audio</code> element.</audio>
         </div>

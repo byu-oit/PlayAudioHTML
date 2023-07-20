@@ -10,8 +10,9 @@ export interface PlayAudioHTMLContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
-    tabIndex: number;
-    fileId: EditableValue<BigJs.Big>;
+    tabIndex?: number;
+    id: string;
+    fileId: EditableValue<string>;
 }
 
 export interface PlayAudioHTMLPreviewProps {
