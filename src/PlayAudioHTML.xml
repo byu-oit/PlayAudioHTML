@@ -9,16 +9,10 @@
     <properties>
         <propertyGroup caption="General">
             <propertyGroup caption="Data source">
-                <property key="fileId" type="attribute" required="true">
-                    <caption>FileID of FileDocument</caption>
-                    <description/>
-                    <attributeTypes>
-                        <attributeType name="String"/>
-                    </attributeTypes>
+                <property key="audioEntity" type="datasource" isList="true" required="true">
+                    <caption>Entity</caption>
+                    <description>Specialization of System.FileDocument for audio data. Use XPath constraint like [id=$currentObject] to return only currentObject in list.</description>
                 </property>
-            </propertyGroup>
-            <propertyGroup caption="Label">
-                <systemProperty key="Label" />
             </propertyGroup>
             <propertyGroup caption="Editability">
                 <systemProperty key="Editability"/>

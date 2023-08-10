@@ -1,6 +1,10 @@
 /*
 Place your custom CSS here
 */
+.outer-container {
+    font-family: Arial,sans-serif;
+}
+
 .widget-play-audio {
     width: 304px;
     height: 24px;
