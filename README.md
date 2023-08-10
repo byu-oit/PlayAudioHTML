@@ -29,9 +29,7 @@ controls for play/pause, etc.
 
 ## How to Use in a Studio Pro Project
 
-<p align="center">
-    <img src="readme-images/ConfigureAudioWidget.png" width="800" title="Configure Audio Widget" alt="Configure Audio Widget">
-</p>
+![ConfigureAudioWidget.png](readme-images/ConfigureAudioWidget.png)
 
 1. Add a Data View or List View of a specialization of the System.FileDocument 
 entity to a page.
