@@ -6,7 +6,7 @@
   "copyright": "2020 BYU",
   "author": "Lauren Anderson",
   "config": {
-    "projectPath": "C:\\Users\\laurenra\\Documents\\Mendix\\HTML Audio-lauren-mod",
+    "projectPath": "",
     "mendixHost": "http://localhost:8080",
     "developmentPort": "3000"
   },
