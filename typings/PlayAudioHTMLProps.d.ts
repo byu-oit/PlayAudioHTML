@@ -4,19 +4,18 @@
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
-import { EditableValue } from "mendix";
+import { ListValue } from "mendix";
 
 export interface PlayAudioHTMLContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    id: string;
-    fileId: EditableValue<string>;
+    audioEntity: ListValue;
 }
 
 export interface PlayAudioHTMLPreviewProps {
     class: string;
     style: string;
-    fileId: string;
+    audioEntity: {} | null;
 }

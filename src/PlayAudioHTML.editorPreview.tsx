@@ -1,13 +1,16 @@
 import { Component, ReactNode, createElement } from "react";
 import { PlayAudio } from "./components/PlayAudio";
 import { PlayAudioHTMLPreviewProps } from "../typings/PlayAudioHTMLProps";
+import { ListValue } from "mendix";
 
 declare function require(name: string): string;
 
 export class preview extends Component<PlayAudioHTMLPreviewProps> {
     render(): ReactNode {
-        const fileId = `[${this.props.fileId}]`;
-        return <PlayAudio fileId={fileId}/>;
+        // const fileId = `[${this.props.fileId}]`;
+        // return <PlayAudio
+        //     fileId={fileId}
+        return <PlayAudio/>;
     }
 }
 
