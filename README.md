@@ -28,6 +28,11 @@ controls for play/pause, etc.
 ![VolumAudio.png](readme-images/VolumeAudio.png)
 
 ## How to Use in a Studio Pro Project
+
+<p align="center">
+    <img src="readme-images/ConfigureAudioWidget.png" width="800" title="Configure Audio Widget" alt="Configure Audio Widget">
+</p>
+
 1. Add a Data View or List View of a specialization of the System.FileDocument 
 entity to a page.
 2. In the Data View, add a Play Audio HTML widget.
