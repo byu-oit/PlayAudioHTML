@@ -29,6 +29,8 @@ export class PlayAudio extends Component<PlayAudioProps> {
      * with the currentObject. Use an XPath constraint in the widget Entity
      * attribute in Studio Pro like [id=$currentObject] or
      * [id='[%CurrentObject%]'] to constrain the list to just the currentObject.
+     *
+     * See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
      */
     // TODO: remove unused or unnecessary parameters like style, hasError, required, disbled.
     render(): ReactNode {
