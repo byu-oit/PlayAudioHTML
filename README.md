@@ -23,6 +23,10 @@ controls for play/pause, etc.
 
 ![PauseAudio.png](readme-images/PauseAudio.png)
 
+#### Adjust volume while audio file is playing
+
+![VolumAudio.png](readme-images/VolumeAudio.png)
+
 ## How to Use in a Studio Pro Project
 1. Add a Data View or List View of a specialization of the System.FileDocument 
 entity to a page.
