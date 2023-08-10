@@ -15,6 +15,14 @@ This uses the [HTML5
 element and displays time elapsed / total time and a moving playhead with 
 controls for play/pause, etc.
 
+#### Ready to play audio file
+
+![PlayAudio.png](readme-images/PlayAudio.png)
+
+#### Audio file is playing
+
+![PauseAudio.png](readme-images/PauseAudio.png)
+
 ## How to Use in a Studio Pro Project
 1. Add a Data View or List View of a specialization of the System.FileDocument 
 entity to a page.
