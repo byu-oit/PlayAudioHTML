@@ -49,7 +49,7 @@ The widget will display on the page and allow you to play the audio file,
 unless it returns more than one object because it hasn't been constrained 
 with XPath to just the currentObject.
 
-## Build
+## How to Build
 
 1. Clone this code.
 2. Run `npm install` in the root project directory to install dependencies 
