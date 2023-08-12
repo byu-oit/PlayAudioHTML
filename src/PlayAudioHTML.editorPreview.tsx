@@ -1,7 +1,6 @@
 import { Component, ReactNode, createElement } from "react";
 import { PlayAudio } from "./components/PlayAudio";
 import { PlayAudioHTMLPreviewProps } from "../typings/PlayAudioHTMLProps";
-import { ListValue } from "mendix";
 
 declare function require(name: string): string;
 

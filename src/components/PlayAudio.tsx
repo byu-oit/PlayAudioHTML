@@ -1,9 +1,7 @@
 import { CSSProperties, Component, ReactNode, createElement } from "react";
 import { ListValue } from "mendix";
-import classNames from "classnames";
 
 export interface PlayAudioProps {
-    className?: string;
     style?: CSSProperties;
     tabIndex?: number;
     hasError?: boolean;
@@ -34,7 +32,6 @@ export class PlayAudio extends Component<PlayAudioProps> {
      */
     // TODO: remove unused or unnecessary parameters like style, hasError, required, disbled.
     render(): ReactNode {
-        const className = classNames(this.props.className);
         const fileUrlRoot = window.location.protocol + "//" +
             window.location.hostname + ":" +
             window.location.port + "/" +

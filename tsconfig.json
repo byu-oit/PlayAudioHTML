@@ -1,8 +1,7 @@
 {
-  "extends": "./node_modules/@mendix/pluggable-widgets-tools/configs/tsconfig.base.json",
+  "extends": "@mendix/pluggable-widgets-tools/configs/tsconfig.base",
   "compilerOptions": {
-    "noUnusedLocals": false,
-    "types": ["node", "mendix-client"],
-    "lib": ["es2017", "dom"]
-  }
+    "baseUrl": "./"
+  },
+  "include": ["./src", "./typings"]
 }

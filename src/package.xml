@@ -5,7 +5,7 @@
             <widgetFile path="PlayAudioHTML.xml"/>
         </widgetFiles>
         <files>
-            <file path="byu/playaudiohtml"/>
+            <file path="edu/byu/widget/web/playaudiohtml"/>
         </files>
     </clientModule>
 </package>
