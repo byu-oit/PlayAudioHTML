@@ -8,6 +8,7 @@ export interface PlayAudioProps {
     required?: boolean;
     disabled?: boolean;
     audioEntity?: ListValue;
+    isDesignMode?: boolean;
 }
 
 export class PlayAudio extends Component<PlayAudioProps> {
@@ -32,31 +33,42 @@ export class PlayAudio extends Component<PlayAudioProps> {
      */
     // TODO: remove unused or unnecessary parameters like style, hasError, required, disbled.
     render(): ReactNode {
-        const fileUrlRoot = window.location.protocol + "//" +
-            window.location.hostname + ":" +
-            window.location.port + "/" +
-            "file?guid=";
 
-        if (this.props.audioEntity?.status === 'available') {
-            const ds = this.props.audioEntity;
-            var itemcount = 0;
-            var itemguid = "";
-            ds?.items?.forEach((dataItem) => {
-                itemcount++;
-                itemguid = dataItem.id;
-            });
-            if (itemcount === 1) {
-                return <div className={"outer-container"}>
-                    <div className="widget-play-audio">
-                        <audio className="audio-player" controls src={fileUrlRoot + itemguid}>Your browser does not support the <code>audio</code> element.</audio>
+        // Display simple preview (only for Design Mode in Studio Pro).
+        if (this.props.isDesignMode) {
+            return <div className={"outer-container"}>
+                <div className="widget-play-audio">
+                    <audio className="audio-player" controls src="no source">Your browser does not support the <code>audio</code> element.</audio>
+                </div>
+            </div>
+        }
+        else {
+            const fileUrlRoot = window.location.protocol + "//" +
+                window.location.hostname + ":" +
+                window.location.port + "/" +
+                "file?guid=";
+
+            if (this.props.audioEntity?.status === 'available') {
+                const ds = this.props.audioEntity;
+                var itemcount = 0;
+                var itemguid = "";
+                ds?.items?.forEach((dataItem) => {
+                    itemcount++;
+                    itemguid = dataItem.id;
+                });
+                if (itemcount === 1) {
+                    return <div className={"outer-container"}>
+                        <div className="widget-play-audio">
+                            <audio className="audio-player" controls src={fileUrlRoot + itemguid}>Your browser does not support the <code>audio</code> element.</audio>
+                        </div>
                     </div>
-                </div>
-            }
-            else {
-                console.log('ERROR: Data source for Play Audio HTML widget must return a list of only one row with the current object. Try using [id=$currentObject] or similar in the XPath constraint to constrain to just the current object.');
-                return <div className={"outer-container"}>
-                    <p style={{"color": "red"}}>Error displaying Play Audio HTML widget.</p>
-                </div>
+                }
+                else {
+                    console.log('ERROR: Data source for Play Audio HTML widget must return a list of only one row with the current object. Try using [id=$currentObject] or similar in the XPath constraint to constrain to just the current object.');
+                    return <div className={"outer-container"}>
+                        <p style={{"color": "red"}}>Error displaying Play Audio HTML widget.</p>
+                    </div>
+                }
             }
         }
     }

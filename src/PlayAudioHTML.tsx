@@ -11,6 +11,7 @@ export default class PlayAudioHTML extends Component<PlayAudioHTMLContainerProps
             style={this.props.style}
             tabIndex={this.props.tabIndex}
             audioEntity={this.props.audioEntity}
+            isDesignMode={false}
         />
     }
 }

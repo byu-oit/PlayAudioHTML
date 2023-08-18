@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play Audio Test</title>
+    <script src="PlayAudioTest.js"></script>
+</head>
+<body>
+    <div>
+        <h3>RecordAudioHTML Widget SVG</h3>
+        <!-- actual <svg viewBox="0 0 474 32" width="474" height="32">-->
+        <svg viewBox="0 0 480 32" width="480" height="32">
+            <!-- Record button red circle -->
+            <rect x="1" y="1" width="30" height="30" fill="#f0f0f0" stroke="#aaaaaa" stroke-width="1"/>
+            <circle cx="16" cy="16" r="8" fill="#f40000"/>
+            <!-- Stop button black square -->
+            <rect x="45" y="1" width="30" height="30" fill="#f0f0f0" stroke="#aaaaaa" stroke-width="1"/>
+            <rect x="54" y="10" width="12" height="12" fill="#000000"/>
+            <!-- Audio widget BEGIN -->
+            <!-- Playback oval -->
+            <rect x="87" y="1" width="300" height="30" fill="#f0f0f0" stroke="#aaaaaa" stroke-width="1" rx="16" ry="16"/>
+            <!-- Play button (black triangle) -->
+            <polygon points="109,10 119,16 109,22" fill="#000000"/>
+            <text x="133" y="21" style="font: 14px sans-serif">0:12 / 0:12</text>
+            <!-- Progress bar (black line) -->
+            <line x1="215" y1="16" x2="295" y2="16" stroke="#000000" stroke-width="4"/>
+            <!-- Play head position (black circle) -->
+            <circle cx="220" cy="16" r="6" fill="#000000"/>
+            <!-- Speaker icon (black) -->
+            <polygon points="319,13 323,13 327,9 327,23 323,19 319,19" fill="#000000"/>
+            <!-- Speaker sound (black arcs) -->
+            <path d="M329,13 A3,3 0 0 1 329,19" />
+            <path d="M329,10 A6,6 0 0 1 329,22" stroke="#000000" stroke-width="2" fill="none" />
+            <!-- Options icon (3 vertical dots) -->
+            <circle cx="359" cy="11" r="1.6" fill="#000000"/>
+            <circle cx="359" cy="16" r="1.6" fill="#000000"/>
+            <circle cx="359" cy="21" r="1.6" fill="#000000"/>
+            <!-- Audio widget END -->
+            <!-- Plus (add) button -->
+            <rect x="401 " y="1" width="30" height="30" fill="#f0f0f0" stroke="#aaaaaa" stroke-width="1"/>
+            <line x1="410" y1="16" x2="424" y2="16" stroke="#000000" stroke-width="3"/>
+            <line x1="417" y1="9" x2="417" y2="23" stroke="#000000" stroke-width="3"/>
+            <!-- X (delete) button -->
+            <rect x="443 " y="1" width="30" height="30" fill="#f0f0f0" stroke="#aaaaaa" stroke-width="1"/>
+            <line x1="453" y1="11" x2="463" y2="21" stroke="#000000" stroke-width="3"/>
+            <line x1="453" y1="21" x2="463" y2="11" stroke="#000000" stroke-width="3"/>
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+        <h3>PlayAudioHTML Widget SVG x-86 x-90 + 4 </h3>
+        <!-- actual <svg viewBox="0 0 302 32" width="302" height="32">-->
+        <!-- padded <svg viewBox="0 0 310 32" width="310" height="32">-->
+        <!-- Mendix <svg viewBox="0 0 480 32" width="480" height="32">-->
+        <svg viewBox="0 0 480 32" width="480" height="32">
+            <!-- Audio widget BEGIN -->
+            <!-- Playback oval -->
+            <rect x="1" y="1" width="300" height="30" fill="#f0f0f0" stroke="#aaaaaa" stroke-width="1" rx="16" ry="16"/>
+            <!-- Play button (black triangle) -->
+            <polygon points="23,10 33,16 23,22" fill="#000000"/>
+            <text x="47" y="21" style="font: 14px sans-serif">0:12 / 0:12</text>
+            <!-- Progress bar (black line) -->
+            <line x1="129" y1="16" x2="209" y2="16" stroke="#000000" stroke-width="4"/>
+            <!-- Play head position (black circle) -->
+            <circle cx="134" cy="16" r="6" fill="#000000"/>
+            <!-- Speaker icon (black) -->
+            <polygon points="233,13 237,13 241,9 241,23 237,19 233,19" fill="#000000"/>
+            <!-- Speaker sound (black arcs) -->
+            <path d="M243,13 A3,3 0 0 1 243,19" />
+            <path d="M243,10 A6,6 0 0 1 243,22" stroke="#000000" stroke-width="2" fill="none" />
+            <!-- Options icon (3 vertical dots) -->
+            <circle cx="273" cy="11" r="1.6" fill="#000000"/>
+            <circle cx="273" cy="16" r="1.6" fill="#000000"/>
+            <circle cx="273" cy="21" r="1.6" fill="#000000"/>
+            <!-- Audio widget END -->
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+    <div>
+        <h3>SVG Test</h3>
+        <svg height="130" width="500">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+    <div>
+        <h1>Audio Player Tests</h1>
+        <h3>Etiquette Lesson by David Sedaris</h3>
+    </div>
+    <div>
+        <p>audio-player-1: Play audio file from the beginning (no seek time).</p>
+        <audio id="audio-player-1" controls src="file:///C:/Users/laurenra/Downloads/241.mp3">Your browser does not support the <code>audio</code> element.</audio>
+    </div>
+    <div>
+        <button style="margin: 1em;" onclick="playAudioStartingAt(1711)">Seek to time 1711 seconds in audio-player-1</button>
+    </div>
+    <div>
+        <p>audio-player-2: Play audio file from seek time 1711 seconds (#t=1711).</p>
+        <audio id="audio-player-2" controls src="file:///C:/Users/laurenra/Downloads/241.mp3#t=1711">Your browser does not support the <code>audio</code> element.</audio>
+    </div>
+    <div>
+        <button style="margin: 1em;" onclick="showMyInfo()">Show My Info</button>
+    </div>
+    <div>
+        <button style="margin: 1em;" onclick="playMyAudioFile()">Play My Audio</button>
+    </div>
+    <div id="audio-player-div">
+        <p>audio-player-dev: Audio player dynamically created here with seek time of 1711 seconds.</p>
+    </div>
+</body>
+</html>

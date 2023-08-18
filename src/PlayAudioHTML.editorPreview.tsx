@@ -9,7 +9,8 @@ export class preview extends Component<PlayAudioHTMLPreviewProps> {
         // const fileId = `[${this.props.fileId}]`;
         // return <PlayAudio
         //     fileId={fileId}
-        return <PlayAudio/>;
+        return <PlayAudio isDesignMode={true}/>;
+        // return <audio className="audio-player" controls src="no source">Your browser does not support the <code>audio</code> element.</audio>;
     }
 }
 
