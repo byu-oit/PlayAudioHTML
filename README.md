@@ -29,7 +29,7 @@ controls for play/pause, etc.
 
 ## How to Use in a Studio Pro Project
 
-![ConfigureAudioWidget.png](readme-images/ConfigureAudioWidget.png)
+![ConfigurePlayAudioWidget.png](readme-images/ConfigurePlayAudioWidget.png)
 
 1. Add a Data View or List View of a specialization of the System.FileDocument 
 entity to a page.
